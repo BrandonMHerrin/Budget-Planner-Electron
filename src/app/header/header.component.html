@@ -1,1 +1,6 @@
-<mat-toolbar color="primary">Budget Planner</mat-toolbar>
+<mat-toolbar color="primary">
+  {{ nav }}
+  <span class="spacer"></span>
+  <button mat-button routerLink="/dashboard">Dashboard</button>
+  <button mat-button routerLink="/categories">Categories</button>
+</mat-toolbar>

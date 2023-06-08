@@ -7,14 +7,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { CategoriesComponent } from './categories/categories.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MaterialModule } from './material/material.module';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    CategoriesComponent,
+    DashboardComponent,
+    SidenavComponent,
+  ],
   imports: [
+    MaterialModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
