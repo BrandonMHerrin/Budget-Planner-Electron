@@ -12,6 +12,9 @@ import { CategoriesComponent } from './categories/categories.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MaterialModule } from './material/material.module';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { MainContentComponent } from './main-content/main-content.component';
+import { BudgetComponent } from './budget/budget.component';
+import { TransactionComponent } from './transaction/transaction.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     CategoriesComponent,
     DashboardComponent,
     SidenavComponent,
+    MainContentComponent,
+    BudgetComponent,
+    TransactionComponent,
   ],
   imports: [
     MaterialModule,

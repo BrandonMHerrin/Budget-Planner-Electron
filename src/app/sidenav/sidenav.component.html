@@ -1,1 +1,46 @@
-<p>sidenav works!</p>
+<mat-list>
+  <mat-list-item>
+    <button
+      mat-icon-button
+      matTooltip="Dashboard"
+      matTooltipPosition="right"
+      routerLink="/dashboard"
+    >
+      <mat-icon>dashboard</mat-icon>
+    </button>
+  </mat-list-item>
+  <mat-list-item>
+    <button
+      mat-icon-button
+      matTooltip="Budget"
+      matTooltipPosition="right"
+      routerLink="/budget"
+    >
+      <mat-icon>calculate</mat-icon>
+    </button>
+  </mat-list-item>
+  <mat-list-item>
+    <button
+      mat-icon-button
+      matTooltip="Transactions"
+      matTooltipPosition="right"
+      routerLink="/transaction"
+    >
+      <mat-icon>payments</mat-icon>
+    </button>
+  </mat-list-item>
+  <span class="spacer"></span>
+  <mat-list-item>
+    <button
+      mat-icon-button
+      matTooltip="Settings"
+      matTooltipPosition="right"
+      [matMenuTriggerFor]="settingsMenu"
+    >
+      <mat-icon>settings</mat-icon>
+    </button>
+    <mat-menu #settingsMenu="matMenu">
+      <button mat-menu-item routerLink="/categories">Categories</button>
+    </mat-menu>
+  </mat-list-item>
+</mat-list>
