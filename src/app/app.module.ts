@@ -15,6 +15,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { BudgetComponent } from './budget/budget.component';
 import { TransactionComponent } from './transaction/transaction.component';
+import { TransactionTableComponent } from './transaction/transaction-table/transaction-table.component';
+import { TransactionToolbarComponent } from './transaction/transaction-toolbar/transaction-toolbar.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { TransactionComponent } from './transaction/transaction.component';
     MainContentComponent,
     BudgetComponent,
     TransactionComponent,
+    TransactionTableComponent,
+    TransactionToolbarComponent,
   ],
   imports: [
     MaterialModule,

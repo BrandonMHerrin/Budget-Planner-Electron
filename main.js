@@ -1,6 +1,7 @@
 const { app, BrowserWindow } = require("electron");
 const url = require("url");
 const path = require("path");
+const dbTest = require("./db/db-test");
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -19,6 +20,8 @@ function createWindow() {
 
 app.whenReady().then(() => {
   createWindow();
+  dbTest.createTable;
+  dbTest.closeDb;
   app.on("activate", function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
   });

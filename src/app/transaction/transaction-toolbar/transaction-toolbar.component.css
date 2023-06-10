@@ -1,0 +1,9 @@
+mat-toolbar {
+  height: 48px;
+  display: flex;
+  gap: 16px;
+}
+
+.spacer {
+  flex: 1;
+}
